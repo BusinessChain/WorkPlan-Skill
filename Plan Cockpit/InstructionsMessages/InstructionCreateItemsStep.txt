@@ -1,0 +1,3 @@
+This message describes a solution for a change in the code base. The code base is the repository in "CodeRepository" together with every project its solution references.
+For context, the master plan describes the idea of the entire change. The subplan describes the change that should be implemented in this step. The items cover only the subplan; parts of the master plan outside the subplan belong to later steps and get no item.
+The solution describes the change that should be implemented in this step.

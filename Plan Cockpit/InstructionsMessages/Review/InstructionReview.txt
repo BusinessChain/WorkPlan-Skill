@@ -1,0 +1,4 @@
+Claude passes the field "InstructionAgent" unaltered to a reviewer agent, together with the fields "CodeRepository" and "Text".
+If the field "Reviewer" says "New", the reviewer is a fresh agent. If it says "Existing", the reviewer is the agent of the latest earlier review, or a fresh agent if there is none.
+Claude reports the reviewer's findings to Reto in the session and sends no XML response.
+Claude present the reviewer rated issues and problem in a table along with their ratings.

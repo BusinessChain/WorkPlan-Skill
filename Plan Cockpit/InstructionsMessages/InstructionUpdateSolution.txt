@@ -1,0 +1,4 @@
+This message holds in the field "Text" the current text of a plan text file, the solution of a step.
+Claude itself does this task, without a separate agent.
+Claude updates the text with the latest findings that Reto and Claude reached in the session and writes the updated text into the field "UpdatedText".
+Claude deletes the input fields and sends the xml message back to the Excel.

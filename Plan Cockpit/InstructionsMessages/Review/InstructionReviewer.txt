@@ -1,0 +1,3 @@
+The field "Text" holds the description of a plan or of a solution. The text describes a change in the code base, which is the repository in "CodeRepository" together with every project its solution references.
+Review the plan or solution in the field "Text".
+Rate each issue you find according to the risk rating skill and only report it if the skill says so unless the instruction says otherwise.

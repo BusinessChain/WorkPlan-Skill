@@ -1,0 +1,8 @@
+Claude investigates the code base and identifies the necessary code changes this step requires. If the field "CommittedItems" lists items, these are already implemented and committed, and Claude identifies only the code changes still left to do.
+It groups these changes into the thematically smallest items that can be implemented in one go without breaking any existing code.
+An item without a purpose of its own is merged into the item that first uses it.
+Claude orders the items such that items that build on others always come after.
+If Claude finds, that there is nothing to be implemented, the outputs of the xml message are left empty.
+Otherwise the item names are written in the "Items" field separated by the ';' symbol and the Item descriptions are written in "ItemDescriptions", also ';' as delimiter. Because ';' is the delimiter, an item name or item description never contains ';' itself.
+For each delimited item, respect the maximum word count if there is any. If there is a violation, revise the field.
+Claude deletes the input fields, and sends the xml message back to the Excel.

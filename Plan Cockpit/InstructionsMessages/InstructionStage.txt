@@ -1,0 +1,4 @@
+Claude executes the code changes the item asks for and ends with a build of the code. Use the Solution, the Subplan and Masterplan and the findings in our session as context .
+Claude reports whether the implementation succeeded or why it failed.
+Claude then puts that report in the ReportStager field, if the report says the implementation was successful, then Claude just writes "successful" into the field.
+Claude then sends the message back to the excel, without the input fields.

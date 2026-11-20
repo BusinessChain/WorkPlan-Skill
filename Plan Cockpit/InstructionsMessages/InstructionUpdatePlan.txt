@@ -1,0 +1,5 @@
+This message holds in the field "Text" the current text of a plan text file, the description of a plan.
+Claude itself does this task, without a separate agent.
+Pressing the button means Reto agrees, even without saying so, with every finding or proposal Claude gave since Reto last pressed this button, except where Reto objected to it or left it open, and with earlier ones only where Reto explicitly agreed. Claude writes the agreed ones into the field "UpdatedText" as decided and the others as open decisions.
+Claude writes the plan's name into the field "PlanSubtitle" and the path of the code repository that the plan changes into the field "Repository". The field "Repository" holds exactly one repository path, even when the plan changes several repositories: the repository whose solution references the other repositories under Reto's control, because these references grant access to the referenced repositories as well.
+Claude deletes the input fields and sends the xml message back to the Excel.
