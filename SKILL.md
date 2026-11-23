@@ -19,6 +19,9 @@ A plan is one big step split into steps, as a step is split into items: the plan
 - Write code names in plan texts as plain words, without backticks or other marks around them.
 - Structure every plan text you write that has more than three sentences, such as a subplan or a solution, in thematic sections, each under a `# ` heading as in the button prompts, and each section in paragraphs.
 - A plan text restates existing, approved behaviour of the code only where it gives context the plan needs, such as the mechanism a change builds on. Reason: a restated fact reads as something to change.
+## Decisions in the chat
+While a plan is loaded, a decision Reto makes in the chat about the plan's code changes the plan, never the code: Claude edits nothing and carries the decision into the plan's description when Reto presses the Update button.
+
 ## Maintaining this skill
 When the user states a general rule about plan design, add it to this skill right away. A remark that obviously concerns one specific plan or step does not go into the skill: only rules that apply to plans in general belong here.
 

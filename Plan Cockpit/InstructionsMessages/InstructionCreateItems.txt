@@ -1,8 +1,12 @@
+This message describes a plan for a change in the code base. The code base is the repository in "CodeRepository" together with every project its solution references.
+Claude itself does this task, without a separate agent.
+For context, the master plan describes the idea of the entire change. The subplan describes the change that should be implemented in this step. The items cover only the subplan; parts of the master plan outside the subplan belong to later steps and get no item.
+The field "Solution" holds the step's current solution, and is empty when the step has none yet. Claude writes into the field "UpdatedSolution" the solution it works out for the subplan, starting from the current solution and bringing it in line with the master plan, the subplan and the discussion in the session: the code changes it identified and the findings of its investigation of the code base and of the discussion that the stager needs to implement the items.
 Claude investigates the code base and identifies the necessary code changes this step requires. If the field "CommittedItems" lists items, these are already implemented and committed, and Claude identifies only the code changes still left to do.
 It groups these changes into the thematically smallest items that can be implemented in one go without breaking any existing code.
 An item without a purpose of its own is merged into the item that first uses it.
 Claude orders the items such that items that build on others always come after.
-If Claude finds, that there is nothing to be implemented, the outputs of the xml message are left empty.
+If Claude finds that there is nothing left to be implemented, it leaves the fields "Items" and "ItemDescriptions" empty.
 Otherwise the item names are written in the "Items" field separated by the ';' symbol and the Item descriptions are written in "ItemDescriptions", also ';' as delimiter. Because ';' is the delimiter, an item name or item description never contains ';' itself.
 For each delimited item, respect the maximum word count if there is any. If there is a violation, revise the field.
 Claude deletes the input fields, and sends the xml message back to the Excel.
